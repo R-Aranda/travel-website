@@ -1,0 +1,74 @@
+.login-form-wrapper {
+    height: 400px;
+    width: 400px;
+    background-color: #F9F9F9;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 10px 40px 0 rgba(0, 0, 0, 0.7);
+    border-radius: 9px;
+    border: 1px #748DA6 solid;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.login-form-input{
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+    border: 1px gray solid;
+    border-radius: 5px;
+    margin-bottom: 17px;
+}
+
+.login-form-btns-wrapper { 
+  padding: 10px 24px;
+  cursor: pointer;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+    margin: auto;
+    display:table;
+}
+
+
+.login-form-btns-wrapper button:hover {
+    background-color: #5a92aa;
+  }
+
+.login-form-btn {
+    color: #111f2d;
+    background-color: #73a9c0;
+    padding: 7px;
+    width: 200px;
+    border: 0px;
+    border-radius: 4px;
+    margin-top: 4px;
+    margin-bottom: 0%;
+    font-size: large;
+    font-weight: bold;
+    display: block;
+}
+
+.forgot-pw {
+    color: #111f2d;
+    background-color: #73a9c0;
+    padding: 7px;
+    width: 90%;
+    border: 0px;
+    border-radius: 4px;
+    margin-top: 10px;
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.register-link {
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+
+

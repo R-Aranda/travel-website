@@ -1,0 +1,86 @@
+.form-wrapper, .tall-form-wrapper{
+    height: 400px;
+    width: 400px;
+    background-color: #F9F9F9;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 10px 40px 0 rgba(0, 0, 0, 0.7);
+    border-radius: 9px;
+    border: 1px #748DA6 solid;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.tall-form-wrapper{
+    height: 430px;
+}
+
+.form-header {
+    text-align: center;
+}
+
+.form-input-wrapper {
+    text-align: center;
+}
+
+.form-input{
+    width: 80%;
+    padding: 12px;
+    box-sizing: border-box;
+    border: 1px gray solid;
+    border-radius: 5px;
+    margin-bottom: 8px;
+}
+
+.form-btns-wrapper { 
+  padding: 10px 24px;
+  cursor: pointer;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.form-btns-wrapper button:hover {
+    background-color: #5a92aa;
+  }
+
+.form-btn {
+    color: #111f2d;
+    background-color: #73a9c0;
+    padding: 7px;
+    width: 200px;
+    border: 0px;
+    border-radius: 4px;
+    margin-top: 4px;
+    margin-bottom: 0%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: large;
+    font-weight: bold;
+
+}
+
+.form-login {
+    color: #111f2d;
+    background-color: #73a9c0;
+    padding: 7px;
+    width: 170px;
+    border: 0px;
+    border-radius: 4px;
+    margin-top: 10px;
+    margin-left: 15px;
+    font-weight: bold;
+    
+}
+
+.error-message {
+    color: red;
+    font-size: 11px;
+    margin-top: -5px;
+    margin-bottom: 2px;
+}
+
+hr { 
+    border-top: 1px solid #8c8b8b;
+    margin-top: 10px;
+    margin-bottom: -2px;
+    
+}

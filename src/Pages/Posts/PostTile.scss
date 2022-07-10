@@ -1,0 +1,35 @@
+.not-selected, .selected {
+    height: 230px;
+    width: 700px;
+    background-color: #F9F9F9;
+    border-radius: 9px;
+    padding: 13px;
+    padding-top: 4px;
+    padding-left: 20px;
+    box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.75);
+    margin-top: 20px;
+}
+
+.selected {
+    
+}
+
+.tile-header {
+    color: #5a92aa;
+}
+
+.post-bottom {
+    padding-right: 20px;
+}
+
+.reply {
+    width: 50%;
+    display: inline-block;
+    text-align: right;
+}
+
+.post-username {
+    width: 50%;
+    display: inline-block;
+}
+

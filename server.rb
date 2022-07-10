@@ -6,34 +6,12 @@ require "pry" if development? || test?
 
 set :bind, '0.0.0.0'  # bind to all interfaces
 set :public_folder, File.join(File.dirname(__FILE__), "public")
-set :views, File.dirname(__FILE__) + "/views"
 
-def read_dishes
-  JSON.parse(File.read("dishes.json"))
-end
 
 get "/" do
-  redirect "/dishes"
-end
-
-get "/dishes" do
   erb :home
 end
 
-# API ENDPOINTS
-get "/api/v1/dishes" do
-  # retrieve dishes from json
-  dishes = read_dishes
-
-  # set response type to json for clarity
-  content_type :json
-
-  # send back a json response of dishes
-  json dishes
-end
-
-
-# SINATRA VIEWS ROUTES
-get "*" do
-  erb :home
+get "/api/v1/posts.json" do
+  posts = File.read("posts.json")
 end
