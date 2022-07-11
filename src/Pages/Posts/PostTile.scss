@@ -22,10 +22,12 @@
     padding-right: 20px;
 }
 
-.reply {
+.full-post {
     width: 50%;
     display: inline-block;
     text-align: right;
+    cursor: pointer;
+    color: #3b5bfb;
 }
 
 .post-username {

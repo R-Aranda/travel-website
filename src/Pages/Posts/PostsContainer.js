@@ -1,22 +1,35 @@
 import React from 'react';
 import PostTile from './PostTile';
 import './PostsContainer.scss'
+import FullPost from './FullPost';
 
 const PostsContainer = (props) => {
-   
+    let selectedPost
+    let selectedClass = "selected"
+
     let allPosts = props.data.posts.map(post => {
-        let selectedClass = "not-selected"
+        
         if(post.id === props.selectedId) {
-            selectedClass = "selected"
+            selectedPost = <FullPost 
+                        id={post.id}
+                        title={post.title}
+                        body={post.body}
+                        username={post.username}
+                        setSelectedPost={setSelectedPost}
+                        setSelectedId={props.setSelectedId}
+                    />
         }
 
         const setSelectedPost = () => {
             props.setSelectedId(post.id)
         }
 
+        
+
         return (
             <PostTile
                 key={post.id}
+                id={props.id}
                 title={post.title}
                 body={post.body}
                 username={post.username}
@@ -29,6 +42,7 @@ const PostsContainer = (props) => {
     return ( 
         <ul className="post-container">
             {allPosts}
+            {selectedPost}
         </ul>
      );
 }

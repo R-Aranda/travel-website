@@ -6,7 +6,7 @@ import firstData from '../../constants/data'
 const Posts = () => {
     
     const [data, setData] = useState(firstData)
-    const [selectedId, setSelectedId] = useState()
+    const [selectedId, setSelectedId] = useState(false)
 
     const fetchData = async () => {
         try {
@@ -17,7 +17,6 @@ const Posts = () => {
                 throw(error)
             }
             const postData = await response.json()
-            
             console.log("postData:", postData)
             setData(postData)
         }catch(err) {

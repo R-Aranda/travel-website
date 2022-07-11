@@ -1,9 +1,12 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './PostTile.scss'
+import FullPost from './FullPost';
 
 const PostTile = (props) => {
+
+
     return ( 
-        <li className={props.selectedClass} onClick={props.setSelectedPost}>
+        <li className={props.selectedClass}>
             <h3 className="tile-header">{props.title}</h3>
             <p className="tile-paragraph">
                 {props.body}
@@ -12,8 +15,9 @@ const PostTile = (props) => {
                 <div className="post-username">
                     <p>Posted by <strong>{props.username}</strong></p>
                 </div>
-                <div className="reply">
-                    <a href="#">Reply</a>
+                <div className="full-post">
+                    <div onClick={props.setSelectedPost}>Full Post</div>
+                    
                 </div>
             </div>
         </li>

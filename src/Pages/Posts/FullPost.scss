@@ -1,0 +1,48 @@
+.fullPost {
+    height: 900px;
+    width: 800px;
+    background-color: #b6e4ff;
+    border-radius: 9px;
+    padding: 13px;
+    padding-top: 4px;
+    padding-left: 20px;
+    box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.75);
+    position: fixed;
+    z-index: 999;
+    top: 50%;
+    left: 50%;
+    margin-top: -40%;
+    margin-left: -400px;
+    overflow: auto;
+}
+
+.exit-post {
+    text-align: right;
+    margin-top: 16px;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.exit-post:hover {
+    color: rgb(84, 82, 82);
+    cursor: pointer;
+}
+
+.header {
+    font-size: 30px;
+    margin-top: -10px;
+}
+
+.comment-input {
+    background-color: #b6e4ff;
+}
+
+.reply {
+    width: 50%;
+    display: inline-block;
+    text-align: left;
+    cursor: pointer;
+    color: #3b5bfb;
+    margin-bottom: 10px;
+}
+
